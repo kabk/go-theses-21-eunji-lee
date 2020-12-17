@@ -1,6 +1,7 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  background-color: black;
 }
 
 * {
@@ -14,6 +15,7 @@ html, body {
 }
 
 body {
+  color: white;
   display: block;
   font-family: helvetica, sans-serif;
   font-size: 1em;
