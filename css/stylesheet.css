@@ -69,6 +69,15 @@ li {
 
 .thesis{
   padding-top: 3em;
-  padding-left: 21em;
+  padding-left: 22em;
   width: 60%;
+}
+
+#footnote{
+  vertical-align: super;
+  font-size: smaller;
+}
+
+#footnote:hover {
+  cursor:pointer;
 }
