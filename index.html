@@ -2,7 +2,7 @@
 <html>
   <head>
     <!--flying text widget start-->
-        <title>Melancholic Inspiration:&thinsp;Light in the midst of misery</title>
+        <title>Melancholic Inspiration:&thinsp;Light in the midst of misery by Eunji Lee</title>
 
         <link rel="shortcut icon" type="image/png" href="./smile2.png"/>
 
@@ -21,25 +21,27 @@
         <script src="scripts/mainscript.js"></script>
 
     </head>
+<div class="title" style="font-size:1.8em; line-height: 1.1em; display: flex; position: fixed;">Melancholic Inspiration:&thinsp;Light in the midst of misery <div style="padding-left: 3em;">Eunji Lee</div></div>
 
     <body>
-<span style="font-size:1.8em;">Melancholic Inspiration:&thinsp;Light in the midst of misery</span>
 
-      <button type="button" class="collapsible" style="margin-top:1em;">Table of Contents</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <button type="button" class="collapsible" style="margin-top:1.1em;">Table of Contents</button>
+      <div class="content" style="margin-top:5em;">
   <li>0.	Abstract</li>
   <li>1.	Prologue</li>
   <li>  2.	What is Melancholia?
-          — From Aristotle to Freud</li>
-  <li>3.	3 People, 3 Melancholia</li>
-  <li>  4.	A Plea for New Perspective
-    	— Create to heal: Louise Bourgeois</li>
-  <li>  5.	Conclusion</li>
-  <li>  6.	Epilogue</li>
+          <br /><span style="margin-left: 55px;" >— From Aristotle to Freud</span>
+          <br /><span style="margin-left: 55px;" >—	A Plea for New Perspective</span>
+          <br /><span style="margin-left: 55px;" >— Create to heal: Louise Bourgeois</span>
+  <li>3.	Three People, Three Melancholia</li>
+
+  <li>  4.	Epilogue</li>
 
 
       </div>
+
+<div class="thesis">
 
 
       <div class="abstract">
@@ -70,7 +72,7 @@
 
 <p>
   On the television, I saw a german advert. Here is how the guardian described the ad.
-  <p style="padding-left: 1.5em; width: 50%;">
+  <p style="padding-left: 1.5em; width: 90%;">
     <i>“The commercial, produced by the German DIY-store chain Hornbach, shows white men working outside in a garden before removing their sweaty clothing and dumping it in a box. The ad then cuts to a grey, industrial city that resembles Tokyo where an Asian woman buys a bag of dirty clothes – previously worn by the men – opens it and moans with pleasure, as the commercial ends with a slogan saying: “That’s how the spring smells.””</i> 1)
   </p>
 </p>
@@ -90,8 +92,24 @@
 
 </div>
 
+</div>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
     </body>
 
   </html>

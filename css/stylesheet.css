@@ -14,9 +14,11 @@ html, body {
 }
 
 body {
-  background-color: black;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 100%);
+  /* background-color: black; */
   color: white;
-  display: block;
+  display: flex;
   font-family: helvetica, sans-serif;
   font-size: 1.3em;
   line-height: 1.45em;
@@ -25,36 +27,48 @@ body {
 
 p{
   margin: 1em;
-  width: 60%;
+  width: 100%;
 }
 
 img{
-  max-width: 30%;
+  max-width: 47%;
+  margin-left: 20.5px;
 }
 
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
+  position: fixed;
+  background: none;
+  color: white;
   cursor: pointer;
-  padding: 0.15em;
-  width: 100%;
+  padding-top: 0.7em;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.5em;
-  color: white;
-  background-color: black;
+  font-size: 1.3em;
+  top: 30px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-}
 
+}
 
 .content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
+  position: fixed;
+  width: 45%;
+  padding-top: 3em;
+  padding: 0 1em;
   max-height: 0;
+  overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: black;
+  color: white;
+}
+
+li {
+  line-height: 2em;
+}
+
+.thesis{
+  padding-top: 3em;
+  padding-left: 21em;
+  width: 60%;
 }
