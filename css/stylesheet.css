@@ -24,10 +24,69 @@ body {
   line-height: 1.45em;
 }
 
+#dot {
+  opacity: 1;
+  animation: flickerDot 10s linear  reverse infinite;
+}
+#dot::after {
+  content: '';
+  width: 150%;
+  -webkit-box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
+  -moz-box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
+  box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
+}
+
+@keyframes flickerDot {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.5;
+  }
+
+  15% {
+    opacity: 0.85;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.thesis span {
+  visibility: hidden;
+}
 
 p{
   margin: 1em;
   width: 100%;
+}
+
+.thesis p span {
+  visibility: visible;
 }
 
 img{
@@ -38,7 +97,10 @@ img{
 .top {
   height: 200px;
   width: 100%;
+}
 
+.title {
+  height: 1.4em;
 }
 
 @media only screen and (max-width: 920px) {
@@ -80,7 +142,7 @@ img{
 
 .content {
   position: fixed;
-  height: 43em;
+  height: 40em;
   font-size: 0.6em;
   /* padding-top: 3em; */
   padding: 0 1em;
@@ -97,6 +159,7 @@ li {
 
 
 .thesis{
+  visibility: hidden;
   padding-top: 6em;
   padding-left: 23em;
   padding-right: 2em;
@@ -107,9 +170,9 @@ li {
 @media only screen and (max-width: 920px) {
   .thesis {
     width: 100%;
-    padding: 0.6em;
+    padding: 1em;
     padding-top: 14em;
-    padding-right: 2em;
+    padding-right: 2.5em;
     font-size: 0.8em;
     line-height: 1.4em;
   }
