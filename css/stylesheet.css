@@ -22,7 +22,6 @@ body {
   font-family: helvetica, sans-serif;
   font-size: 1.3em;
   line-height: 1.45em;
-  margin:0.8em;
 }
 
 p{
@@ -31,31 +30,58 @@ p{
 }
 
 img{
-  max-width: 47%;
+  max-width: 100%;
   margin-left: 20.5px;
 }
 
+.top {
+  height: 200px;
+  width: 100%;
+
+}
+
+@media only screen and (max-width: 920px) {
+  #toc {
+    font-size:0.43em;
+    margin: 0.5em;
+  }
+
+  .title{
+    font-size: 0.8em;
+    line-height: 1.1em;
+    height: 4em;
+  }
+
+  .content{
+    height: 40em;
+  }
+
+}
+
+#toc {
+    background-color: black;
+    margin: 0.5em;
+}
+
 .collapsible {
-  position: fixed;
+  font-size: 0.7em;
+  height: 2em;
+  padding: 0.3em;
+  /* position: absolute; */
   background: none;
   color: white;
   cursor: pointer;
-  padding-top: 0.7em;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.3em;
-  top: 30px;
 }
 
-.active, .collapsible:hover {
-
-}
 
 .content {
   position: fixed;
-  width: 45%;
-  padding-top: 3em;
+  height: 43em;
+  font-size: 0.6em;
+  /* padding-top: 3em; */
   padding: 0 1em;
   max-height: 0;
   overflow: hidden;
@@ -67,11 +93,28 @@ li {
   line-height: 2em;
 }
 
+
+
 .thesis{
-  padding-top: 3em;
-  padding-left: 22em;
+  padding-top: 6em;
+  padding-left: 23em;
+  padding-right: 2em;
   width: 60%;
 }
+
+
+@media only screen and (max-width: 920px) {
+  .thesis {
+    width: 100%;
+    padding: 0.6em;
+    padding-top: 14em;
+    padding-right: 2em;
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+}
+
+
 
 #footnote{
   vertical-align: super;
