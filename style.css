@@ -24,17 +24,21 @@ body {
   line-height: 1.45em;
 }
 
-#dot {
+.dot {
   opacity: 1;
   animation: flickerDot 10s linear  reverse infinite;
 }
-#dot::after {
+
+.dot::after {
   content: '';
   width: 150%;
   -webkit-box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
   -moz-box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
   box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
 }
+
+
+
 
 @keyframes flickerDot {
   0% {
@@ -77,7 +81,7 @@ body {
 
 
 .thesis span {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 p{
@@ -100,7 +104,7 @@ img{
 }
 
 .title {
-  height: 1.4em;
+  height: 1.6em;
 }
 
 @media only screen and (max-width: 920px) {
@@ -131,7 +135,6 @@ img{
   height: 2em;
   padding: 0.3em;
   /* position: absolute; */
-  background: none;
   color: white;
   cursor: pointer;
   border: none;
@@ -159,7 +162,6 @@ li {
 
 
 .thesis{
-  visibility: hidden;
   padding-top: 6em;
   padding-left: 23em;
   padding-right: 2em;
@@ -177,6 +179,16 @@ li {
     line-height: 1.4em;
   }
 }
+
+
+.abstract{
+    visibility: hidden;
+}
+
+.prologue{
+    visibility: hidden;
+}
+
 
 
 
