@@ -9,6 +9,10 @@ $(document).ready(function(){
     // $("span.prologue").css("visibility","visible");
   });
 
+  $(".ch2").click(function(){
+    $(".ch2").css("visibility","visible");
+    // $("span.prologue").css("visibility","visible");
+  });
 
 });
 

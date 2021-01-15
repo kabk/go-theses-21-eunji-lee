@@ -13,13 +13,22 @@ html, body {
   background: white;
 }
 
+@font-face {
+    font-family: 'abc_whyte_edu_inktrapbook';
+    src: url('abcwhyteeduinktrap-book.woff2') format('woff2'),
+         url('abcwhyteeduinktrap-book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 100%);
   /* background-color: black; */
   color: white;
   display: flex;
-  font-family: helvetica, sans-serif;
+  font-family: 'abc_whyte_edu_inktrapbook';
   font-size: 1.3em;
   line-height: 1.45em;
 }
@@ -33,12 +42,16 @@ body {
   content: '';
   width: 150%;
   -webkit-box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
-  -moz-box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
-  box-shadow: -5px 0px 60px 8px rgba(255,255,255,1);
 }
 
 
+li a {
+  text-decoration: none;
+}
 
+a:visited {
+    color:white;
+}
 
 @keyframes flickerDot {
   0% {
@@ -99,18 +112,37 @@ img{
 }
 
 .top {
-  height: 200px;
+  height: 120px;
   width: 100%;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 10%, transparent 100%);
+  position: fixed;
+  top: -200px;
+  display: block;
+  transition: top 0.3s;
 }
 
 .title {
   height: 1.6em;
 }
 
+
+.thesis{
+  padding-top: 6em;
+  padding-left: 23em;
+  padding-right: 2em;
+  width: 60%;
+}
+
+
 @media only screen and (max-width: 920px) {
   #toc {
     font-size:0.43em;
     margin: 0.5em;
+  }
+
+  .top{
+
   }
 
   .title{
@@ -123,11 +155,21 @@ img{
     height: 40em;
   }
 
+  .thesis {
+    width: 100%;
+    padding: 1em;
+    padding-top: 14em;
+    padding-right: 2.5em;
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+
 }
 
 #toc {
     background-color: black;
     margin: 0.5em;
+    border-radius: 10px;
 }
 
 .collapsible {
@@ -140,6 +182,7 @@ img{
   border: none;
   text-align: left;
   outline: none;
+  display: inline-block;
 }
 
 
@@ -155,30 +198,37 @@ img{
   color: white;
 }
 
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  border-radius: 15px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
 li {
   line-height: 2em;
 }
 
 
 
-.thesis{
-  padding-top: 6em;
-  padding-left: 23em;
-  padding-right: 2em;
-  width: 60%;
-}
 
 
-@media only screen and (max-width: 920px) {
-  .thesis {
-    width: 100%;
-    padding: 1em;
-    padding-top: 14em;
-    padding-right: 2.5em;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-}
 
 
 .abstract{
@@ -187,6 +237,27 @@ li {
 
 .prologue{
     visibility: hidden;
+}
+
+.ch2{
+    visibility: hidden;
+}
+
+
+
+
+  .abstract{
+      visibility: hidden;
+  }
+
+  .prologue{
+      visibility: hidden;
+  }
+
+  .ch2{
+      visibility: hidden;
+  }
+
 }
 
 
