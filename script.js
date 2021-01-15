@@ -17,6 +17,28 @@ $(document).ready(function(){
 });
 
 
+$("a").click(function(){
+
+	console.log("clicked: " + $(this).attr('id'));
+
+	showContent($(this).attr('id'))
+});
+
+function showContent(id) {
+	// hide all content sections
+	// $(".portfolio-item").hide();
+
+    //console.log( $("#content-" + id).offset().top )
+	// show the one with  content-[id]
+	$("#content-" + id).show();
+
+    /* BVB fixed this scroll */
+	$([document.documentElement, document.body]).animate({
+        scrollTop: $("#content-" + id).offset().top-100},
+			 'slow');
+
+}
+
 //
 //
 // $("#dot").on("click",function(){
