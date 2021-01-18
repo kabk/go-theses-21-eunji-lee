@@ -161,7 +161,38 @@ img{
   color: white;
 }
 
+.landing {
+  width: 100%;
+  margin: 0.3em;
+  position: absolute;
+}
 
+.landing .big {
+  padding-top: 5px;
+  font-size: 17.4vw;
+  line-height: 0.8em;
+  text-align: center;
+  display: inline-flex;
+  }
+
+
+  .landing .small {
+      width: 100%;
+      line-height: 1em;
+      display: inline-flex;
+      }
+
+.landing .big div {
+
+  animation: scal3 5s linear  reverse infinite;
+}
+
+.landing .small div {
+  width: 2%;
+  font-size: 0.5em;
+  display: inline-flex;
+  animation: scal3 5s linear  reverse infinite;
+}
 
 .thesis{
   margin-top: 26em;
