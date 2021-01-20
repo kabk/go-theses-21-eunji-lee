@@ -13,7 +13,7 @@
 
 
       <div class="top" id="top" style="font-size:1.8em; line-height: 1em; position: fixed;">
-            <div class="title" style="padding:0.5em;">
+            <div class="title" style="padding:0.5em;  margin-bottom: -0.5em; ">
                 Melancholic Inspiration:&thinsp;Light in the midst of misery
 
 
@@ -57,16 +57,18 @@
 
       <div class="landing">
 
-        <div id="big" style="padding-top:0.05em;" class="big">
-          <span class="fall">M</span><span class="fall">e</span><span class="fall">l</span><span class="fall">a</span><span class="fall">n</span><span class="fall">c</span><span class="fall">h</span><span class="fall">o</span><span class="fall">l</span><span class="fall">i</span><span class="fall">c</span>
-        </div>
+        <div class="center">
+          <div id="big" style="padding-top:0.05em;" class="big">
+            <span class="fall">M</span><span class="fall">e</span><span class="fall">l</span><span class="fall">a</span><span class="fall">n</span><span class="fall">c</span><span class="fall">h</span><span class="fall">o</span><span class="fall">l</span><span class="fall">i</span><span class="fall">c</span>
+          </div>
 
-        <div id="big" class="big">
-          <span class="fall">I</span><span class="fall">n</span><span class="fall">s</span><span class="fall">p</span><span class="fall">i</span><span class="fall">r</span><span class="fall">a</span><span class="fall">t</span><span class="fall">i</span><span class="fall">o</span><span class="fall">n</span><span class="fall">:</span>
-        </div>
+          <div id="big" class="big">
+            <span class="fall">I</span><span class="fall">n</span><span class="fall">s</span><span class="fall">p</span><span class="fall">i</span><span class="fall">r</span><span class="fall">a</span><span class="fall">t</span><span class="fall">i</span><span class="fall">o</span><span class="fall">n</span><span class="fall">:</span>
+          </div>
 
-        <div class="small">
-        <span>Light in the midst of misery</span>
+          <div class="small">
+          <span>Light in the midst of misery</span>
+          </div>
         </div>
 
       </div>
@@ -238,7 +240,7 @@ for (i = 0; i < coll.length; i++) {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 240 || document.documentElement.scrollTop > 240) {
     document.getElementById("top").style.top = "0";
   } else {
     document.getElementById("top").style.top = "-200px";
