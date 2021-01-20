@@ -166,6 +166,7 @@ img{
 
 #big span {
   opacity: 0;
+  cursor: pointer;
 }
 
 
@@ -174,7 +175,7 @@ img{
   transition-delay: 3s;
 }
 
-#big span:hover {
+#big span:hover, #big span:active {
   opacity: 1;
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
@@ -217,12 +218,14 @@ img{
                           .title{
                             font-size: 0.8em;
                             line-height: 1.1em;
-                            height: 4em;
+                            height: 3em;
                           }
 
                           .button {
-                            margin-top: -1em;
+
+                            margin-top: 0.6em;
                           }
+
 
                           .content{
                             height: 40em;
