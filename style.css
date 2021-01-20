@@ -203,42 +203,54 @@ img{
 }
 
 
-          @media only screen and (max-width: 920px) {
-            #toc {
-              font-size:0.43em;
-              /* margin: 0.5em; */
-            }
+                        @media only screen and (max-width: 920px) {
+                          #toc {
+                            font-size:0.43em;
+                            /* margin: 0.5em; */
+                          }
 
-            .button .collapsible{
-              height: 3em;
-            }
-
-
-            .title{
-              font-size: 0.8em;
-              line-height: 1.1em;
-              height: 4em;
-            }
-
-            .content{
-              height: 40em;
-            }
+                          .button .collapsible{
+                            height: 3em;
+                          }
 
 
-            #big span {
-              opacity: 0.1;
-            }
+                          .title{
+                            font-size: 0.8em;
+                            line-height: 1.1em;
+                            height: 4em;
+                          }
 
-            .thesis {
-              width: 100%;
-              padding: 1em;
-              padding-top: 10em;
-              padding-right: 2.5em;
-              font-size: 0.8em;
-              line-height: 1.4em;
-            }
+                          .button {
+                            margin-top: -1em;
+                          }
 
-          }
+                          .content{
+                            height: 40em;
+                          }
+
+                          .landing {
+                            padding-top: 4.4em;
+                            padding-bottom: 1em;
+                          }
+
+                          .big{
+                            font-size: 2.3em;
+                          }
+
+                          #big span {
+                            opacity: 0.1;
+                          }
+
+                          .thesis {
+                            width: 100%;
+                            padding: 1em;
+                            padding-top: 6em;
+                            padding-right: 2.5em;
+                            font-size: 0.8em;
+                            line-height: 1.4em;
+                          }
+
+                        }
 
 
 
