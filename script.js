@@ -14,6 +14,17 @@ $(document).ready(function(){
     // $("span.prologue").css("visibility","visible");
   });
 
+  $("#footnote").click(function(){
+    $(".footnote").css("visibility","visible");
+    $("#footnote-1").css("visibility","visible");
+  });
+
+  $("#footnote_2").click(function(){
+    $(".footnote").css("visibility","visible");
+    $("#footnote-1").css("display","none");
+    $("#footnote-2").css("visibility","visible");
+  });
+
 });
 
 

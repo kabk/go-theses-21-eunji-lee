@@ -253,6 +253,15 @@ img{
                             line-height: 1.4em;
                           }
 
+                          .footnote {
+                              top: 90vh;
+                              font-size: 0.8em;
+                          }
+
+                          h5{
+                            font-size: 0.5em;
+                            line-height: 2em;
+                          }
                         }
 
 
@@ -302,12 +311,42 @@ img{
 
 
 
+.footnote {
+  width: 90%;
+  height: 30%;
+  padding: 0px 0;
+  position: fixed;
+  top: 85vh;
+  left: 4.5vw;
+  border-radius:  50%;
+  background-color: rgba(24, 24, 24);
+  color: white;
+  text-align: center;
+  line-height: 1.1em;
+  visibility:  hidden;
+}
+
+.footnote a{
+  text-decoration: underline;
+  color: white;
+}
 
 
+h5 {
+  padding-top: 5%;
+  padding-left:10%;
+  padding-right:10%;
+  font-weight: lighter;
+}
 
-#footnote{
+
+.footnote_small{
   vertical-align: super;
   font-size: smaller;
+}
+
+#footnote{
+  text-decoration: underline;
 }
 
 #footnote:hover {
