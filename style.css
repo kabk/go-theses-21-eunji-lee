@@ -87,6 +87,12 @@ p{
   width: 100%;
 }
 
+.answer {
+  width: 90%;
+  padding-left: 3em;
+}
+
+
 .thesis p span {
   visibility: visible;
 }
