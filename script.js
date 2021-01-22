@@ -19,13 +19,13 @@ $(document).ready(function(){
     // $("span.prologue").css("visibility","visible");
   });
 
-  $(".Epiloge").click(function(){
-    $(".Epiloge").css("visibility","visible");
+  $(".Epilogue").click(function(){
+    $(".Epilogue").css("visibility","visible");
     // $("span.prologue").css("visibility","visible");
   });
 
   $(".References").click(function(){
-    $(".Epiloge").css("visibility","visible");
+    $(".References").css("visibility","visible");
     // $("span.prologue").css("visibility","visible");
   });
 
