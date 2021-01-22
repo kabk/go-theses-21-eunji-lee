@@ -14,6 +14,23 @@ $(document).ready(function(){
     // $("span.prologue").css("visibility","visible");
   });
 
+  $(".ch3").click(function(){
+    $(".ch3").css("visibility","visible");
+    // $("span.prologue").css("visibility","visible");
+  });
+
+  $(".Epiloge").click(function(){
+    $(".Epiloge").css("visibility","visible");
+    // $("span.prologue").css("visibility","visible");
+  });
+
+  $(".References").click(function(){
+    $(".Epiloge").css("visibility","visible");
+    // $("span.prologue").css("visibility","visible");
+  });
+
+
+
   $("#footnote").click(function(){
     $(".footnote").css("visibility","visible");
     $("#footnote-1").css("visibility","visible");
