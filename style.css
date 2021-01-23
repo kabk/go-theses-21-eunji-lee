@@ -89,7 +89,6 @@ p{
 
 .answer {
   width: 90%;
-  padding-left: 3em;
 }
 
 
@@ -287,7 +286,14 @@ img{
                             font-size: 0.5em;
                             line-height: 2em;
                           }
+
+                          .answer {
+                            width: 90%;
+                            padding-left: 1em;
+                          }
+
                         }
+
 
 
 
