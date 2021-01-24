@@ -57,10 +57,13 @@ body {
 li a {
   text-decoration: none;
   color: white;
+  -webkit-text-stroke: 0.5px  black;
 }
 
 a:visited {
     color:white;
+    -webkit-text-stroke: 0.5px  black;
+
 }
 
 @keyframes flickerDot {
@@ -367,25 +370,6 @@ ol li{
     margin-top: 0.3em;
 }
 
-.footnote {
-  width: 90%;
-  height: 30%;
-  padding: 0px 0;
-  position: fixed;
-  top: 85vh;
-  left: 4.5vw;
-  border-radius:  50%;
-  background-color: rgba(24, 24, 24);
-  color: white;
-  text-align: center;
-  line-height: 1.1em;
-  visibility:  hidden;
-}
-
-.footnote a{
-  text-decoration: underline;
-  color: white;
-}
 
 
 h3 {
@@ -401,15 +385,22 @@ h5 {
 }
 
 
+.footnote {
+  color: black;
+  border-top: 1px solid black;
+  margin-top: 1em;
+}
+
+.footnote li{
+  /* text-decoration: none; */
+}
+
+
 .footnote_small{
   vertical-align: super;
   font-size: smaller;
-}
-
-#footnote{
+  display: inline-flex;
+  padding-left: 3pt;
   text-decoration: underline;
-}
-
-#footnote:hover {
-  cursor:pointer;
+  cursor: pointer;
 }

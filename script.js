@@ -67,6 +67,11 @@ function showContent(id) {
 
 }
 
+
+
+
+
+
 //
 //
 // $("#dot").on("click",function(){
