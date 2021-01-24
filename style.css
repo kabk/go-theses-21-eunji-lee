@@ -352,8 +352,20 @@ img{
 
             .References{
                 visibility: hidden;
+                list-style-type: decimal;
             }
 
+ol{
+  margin-top: 0.8em;
+  padding-left: 3em;
+}
+
+ol li{
+    line-height: 1.3em;
+    word-break: break-word;
+    hyphens: auto;
+    margin-top: 0.3em;
+}
 
 .footnote {
   width: 90%;
